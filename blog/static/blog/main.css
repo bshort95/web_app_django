@@ -1,0 +1,94 @@
+
+.headbar {
+    background-color: rgb(136,0,21);
+    display: grid;
+    grid-template-areas:'home_icon'
+                        'texty'
+                        'button1' 'button2 '
+                        'button3';
+    grid-gap: 10px;
+    width: 100%;
+    align-content: center;
+  
+  }
+
+  #docbox { 
+    width: 500px; 
+    background-color: lightgray;
+  
+  }
+
+
+  body {
+  background-color: rgb(163, 95, 105);
+  
+  
+  }
+  
+  
+   
+  @media screen and (min-width: 600px) {
+      .headbar{
+          grid-template-areas:
+          'home_icon texty '
+          'button1 button2 button3';
+          
+      }
+      
+        
+      
+  }
+  
+  
+  
+  @media screen and (min-width: 1200px) {
+    .headbar{
+      grid-template-areas:'home_icon texty button1 button2 button3';
+          
+    }  
+      
+  } 
+  
+  
+  
+  
+  #home_button {
+    grid-area: home_icon;
+  
+  }
+  
+  #title_bar {
+    grid-area: texty ;
+  
+  }
+  
+  .title_bar p{
+    font-family:fantasy;
+    color: rgb(0, 0, 0);
+    font-size: 55px;
+  
+  }
+  
+  
+  .headbar > div {
+    background-color: rgb(136, 0, 21);
+  
+  }
+  
+  
+  #art_page{
+    grid-area: button1;
+  
+  }
+  
+  #ath_page{
+    grid-area: button2;
+  
+  } 
+  
+  #aca_page{
+    grid-area: button3;
+  
+  }
+
+  

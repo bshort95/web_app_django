@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+  
+{% block content %}
+<div class = "signbox">
+    <h1 style="width: 40%; background-color: silver; margin:auto; height: 60%; text-align: center;">are you sure you want to delete the post?</h1>
+    <form method = "POST">
+      {% csrf_token %}
+    <button type= "submit">yes</button>
+  </form>
+    <a href="{% url 'post-detail' object.id %}" >press this to go back to the post</a>
+
+    
+
+</div> 
+
+
+
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+  
+{% block content %}
+  <h1 style="text-align: center; font-size: 32px; font-family: sans-serif;">Pun Archive</h1>
+
+
+  {% for post in posts %}  
+  <div id = "docbox" style="width: 500px; height: 300px; background-color: darkgray; margin: auto; border: 10px black; border-radius: 10%;"> 
+    
+  
+    <h1 style="text-align: center; font-family: fantasy; color: rgb(71, 6, 6);"><a class href="{% url 'post-detail' post.id %}">{{ post.title }}</h1></a>   
+    <p style="color: lightgray;">{{post.author}} - {{post.date_posted|date:"F d, Y"}}<p>
+    <hr/>
+    <p style="width: 80%; background-color: whitesmoke; margin:auto; height: 60%;">{{post.content}}</p>
+
+  </div>
+
+  {% endfor %}
+
+
+
+{% endblock content %}

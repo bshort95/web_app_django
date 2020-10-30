@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+  
+{% block content %}
+  
+<div class = "signbox" style="background-color: lightgray;width:600px; height: 300px; margin: auto; border-radius: 10%; padding: 30px;">
+    <form method = "POST" style="margin: auto;">
+        {% csrf_token %}
+   
+    {{ form.as_p }}
+    
+    <button type= "submit">sign up</button>
+
+    </form>
+
+    <a href="{% url 'login' %}">need to sign in?</a>
+
+</div> 
+
+
+
+{% endblock content %}
