@@ -38,7 +38,7 @@ edit/delete your own posts
 
 you can press the last button to make you own post and becuase it is the newest it will automaticly be sent to the homepage
 
-![screen example](\https://github.com/bshort95/web_app_django/blob/master/Capture4.JPG?raw=true)
+![screen example](https://github.com/bshort95/web_app_django/blob/master/Capture4.JPG?raw=true)
 
 when you press a post itself you will be sent to a detail
 view where if you are the posts writer you will be allowed to 
